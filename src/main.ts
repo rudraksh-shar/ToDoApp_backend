@@ -15,7 +15,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
     app.enableCors({
-        origin: 'https://to-do-app-frontend-xi.vercel.app/', // Replace with your frontend URL
+        origin: 'https://to-do-app-frontend-xi.vercel.app/', 
     });
     await app.listen(3000);
 }
